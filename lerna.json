@@ -1,10 +1,12 @@
 {
-  "version": "independent",
+  "version": "1.0.1",
+  "npmClient": "yarn",
   "command": {
     "publish": {
       "conventionalCommits": true,
       "message": "chore(release): release & version bump",
       "registry": "https://npm.pkg.github.com/"
     }
-  }
+  },
+  "packages": ["./"]
 }

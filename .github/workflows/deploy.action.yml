@@ -16,6 +16,11 @@ jobs:
       - name: Fetch Tags
         run: git fetch --prune --tags
 
+      - name: Configure CI Git User
+        run: |
+          git config --global user.name '@censorbot-components-version'
+          git config --global user.email 'censorbot-components-version@users.noreply.github.com'
+
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
