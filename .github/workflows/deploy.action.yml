@@ -6,15 +6,14 @@ on:
       - master
 
 jobs:
-  build:
-    name: Build Library
+  setup:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
       - name: Fetch Tags
-        run: git fetch --prune --tags
+      run: git fetch --prune --tags
 
       - name: Configure CI Git User
         run: |
@@ -31,8 +30,19 @@ jobs:
       - name: Install Dependencies
         run: yarn install
 
+  test:
+    needs: setup
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
       - name: Run Tests
         run: yarn test
+
+  build:
+    needs: test
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
 
       - name: Build Components
         run: yarn build
