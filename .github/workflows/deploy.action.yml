@@ -1,0 +1,36 @@
+name: Build & Publish Components
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build Library
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Fetch Tags
+        run: git fetch --prune --tags
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "14.x"
+          registry-url: "https://npm.pkg.github.com/"
+          scope: "@censorbot"
+
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: Run Tests
+        run: yarn test
+
+      - name: Build Components
+        run: yarn build
+
+      - name: Publish Library
+        run: NODE_AUTH_TOKEN=${{secrets.GITHUB_TOKEN}} npx lerna publish

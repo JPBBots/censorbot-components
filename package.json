@@ -1,8 +1,7 @@
 {
-  "name": "censorbot-components",
-  "version": "1.0.0",
-  "repository": "https://github.com/JPBBots/censorbot-components.git",
-  "author": "Xyoyu <kyrolites@gmail.com>",
+  "name": "@jpbbots/censorbot-components",
+  "version": "1.0.1",
+  "author": "Xyoyu <ken@slinky.link>",
   "license": "MIT",
   "scripts": {
     "test": "jest",
@@ -19,6 +18,13 @@
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JPBBots/censorbot-components.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "dependencies": {
     "@chakra-ui/react": "^1.6.4",
     "@emotion/react": "^11.4.0",
@@ -50,6 +56,7 @@
     "eslint-plugin-react": "^7.23.1",
     "fork-ts-checker-webpack-plugin": "^6.2.12",
     "jest": "^27.0.6",
+    "lerna": "^4.0.0",
     "prettier": "^2.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

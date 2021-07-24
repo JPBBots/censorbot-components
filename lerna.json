@@ -1,0 +1,10 @@
+{
+  "version": "independent",
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "message": "chore(release): release & version bump",
+      "registry": "https://npm.pkg.github.com/"
+    }
+  }
+}
