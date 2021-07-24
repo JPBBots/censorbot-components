@@ -7,5 +7,8 @@
       "message": "chore(release): release & version bump",
       "registry": "https://npm.pkg.github.com/"
     }
-  }
+  },
+  "packages": [
+    "./"
+  ]
 }
