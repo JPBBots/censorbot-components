@@ -3485,6 +3485,14 @@
     core-js "^3.8.2"
     global "^4.4.0"
 
+"@storybook/client-logger@6.3.5":
+  version "6.3.5"
+  resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-6.3.5.tgz#428b69c6433433372cc8265f285da9707fed63ab"
+  integrity sha512-vPD8MYf/847lsYGhq9eFmcAi+fQc2p6fue9McEreHviaT3S3Sk5/u8L2f8D8sdpym0yPJrHBmla+fK45MnxQLg==
+  dependencies:
+    core-js "^3.8.2"
+    global "^4.4.0"
+
 "@storybook/codemod@6.3.2":
   version "6.3.2"
   resolved "https://registry.yarnpkg.com/@storybook/codemod/-/codemod-6.3.2.tgz#f2aadbd7e157a38d1b87b8d04c7dcb4e4827f19c"
@@ -3835,7 +3843,7 @@
     prettier "~2.2.1"
     regenerator-runtime "^0.13.7"
 
-"@storybook/theming@6.3.2", "@storybook/theming@^6.3.2":
+"@storybook/theming@6.3.2":
   version "6.3.2"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-6.3.2.tgz#1fbee52cb46b0386431c016f5150c7c7a0a05d4b"
   integrity sha512-XICs67cuEGQxnzJ2SYPRZiIELaUCFQsYhtBTXycJIpBUbcbysdBE7GH+3aG8PpDMaSgHWJ7qaiYEoPlhFbAv1w==
@@ -3844,6 +3852,24 @@
     "@emotion/is-prop-valid" "^0.8.6"
     "@emotion/styled" "^10.0.27"
     "@storybook/client-logger" "6.3.2"
+    core-js "^3.8.2"
+    deep-object-diff "^1.1.0"
+    emotion-theming "^10.0.27"
+    global "^4.4.0"
+    memoizerific "^1.11.3"
+    polished "^4.0.5"
+    resolve-from "^5.0.0"
+    ts-dedent "^2.0.0"
+
+"@storybook/theming@^6.3.2":
+  version "6.3.5"
+  resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-6.3.5.tgz#673fa63e7723b651d0a400bf916169bfd3da8c81"
+  integrity sha512-TvgzzUvjJK1jJzqCiB4FUjvK9JZjPUsgYgAdbDuZX//N9zwbjR1cSR8eJWfuCDk0ECvQ6V+vnwnGQ5XmFqSJ1Q==
+  dependencies:
+    "@emotion/core" "^10.1.1"
+    "@emotion/is-prop-valid" "^0.8.6"
+    "@emotion/styled" "^10.0.27"
+    "@storybook/client-logger" "6.3.5"
     core-js "^3.8.2"
     deep-object-diff "^1.1.0"
     emotion-theming "^10.0.27"
