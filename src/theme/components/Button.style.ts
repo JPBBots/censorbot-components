@@ -3,7 +3,7 @@ import { ComponentStyleConfig, DeepPartial } from '@chakra-ui/react'
 export const ButtonStyle: DeepPartial<ComponentStyleConfig> = {
   baseStyle: {
     rounded: 'sm',
-    textStyle: 'button',
+    textStyle: 'label.md',
     boxShadow: 'no-outline',
     transition:
       'color .1s ease, box-shadow .2s ease, background-color .1s ease',

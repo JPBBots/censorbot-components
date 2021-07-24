@@ -49,7 +49,7 @@ export const NavActions = ({
             size="none"
             variant="none"
             {...withLinkProps}
-            textStyle="button"
+            textStyle="label.md"
             onClick={action.onClick || (() => {})}
             color="lighter.40"
           >
