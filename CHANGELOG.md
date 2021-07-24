@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.4 (2021-07-24)
+
+
+### Bug Fixes
+
+* changelog will forever be cringe ([95eec16](https://github.com/JPBBots/censorbot-components/commit/95eec16c97e0fa523e8ca15d3fc4f79e11f95ee1))
+
+
+
+
+
+## 1.1.4 (2021-07-24)
+
+
+### Bug Fixes
+
+* changelog will forever be cringe ([95eec16](https://github.com/JPBBots/censorbot-components/commit/95eec16c97e0fa523e8ca15d3fc4f79e11f95ee1))
+
+
+
+
+
 ## 1.1.3 (2021-07-24)
 
 
