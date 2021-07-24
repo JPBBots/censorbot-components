@@ -18,8 +18,8 @@ jobs:
 
       - name: Configure CI Git User
         run: |
-          git config --global user.name '@censorbot-components-version'
-          git config --global user.email 'censorbot-components-version@users.noreply.github.com'
+          git config --global user.name '@cbc-versioning'
+          git config --global user.email 'cbc-versioning@users.noreply.github.com'
 
       - name: Setup Node
         uses: actions/setup-node@v1
