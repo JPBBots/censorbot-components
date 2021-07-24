@@ -6,4 +6,5 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ## 1.1.7 (2021-07-24)
 
 **Note:** Version bump only for package @jpbbots/censorbot-components
+
 **Note:** This is not the first version of this project, consider it a first "working" version that shows a proper changelog
