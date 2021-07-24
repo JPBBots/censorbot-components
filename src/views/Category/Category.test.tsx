@@ -3,8 +3,10 @@ import { Category } from '@/views/Category/Category'
 
 describe('Category', () => {
   it('should render with title', () => {
-    const { getByText } = render(<Category title="Test Title" />)
+    const title = 'Test Title'
 
-    expect(getByText('Test Title')).toBeInTheDocument()
+    const { getByText } = render(<Category title={title} />)
+
+    expect(getByText(title)).toBeInTheDocument()
   })
 })
