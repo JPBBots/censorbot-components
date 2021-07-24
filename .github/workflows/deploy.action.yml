@@ -1,4 +1,4 @@
-name: Build & Publish Components
+name: Build
 
 on:
   push:
@@ -6,7 +6,8 @@ on:
       - master
 
 jobs:
-  setup:
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,20 +30,6 @@ jobs:
 
       - name: Install Dependencies
         run: yarn install
-
-  test:
-    needs: setup
-    name: Test
-    runs-on: ubuntu-latest
-    steps:
-      - name: Run Tests
-        run: yarn test
-
-  build:
-    needs: test
-    name: Build
-    runs-on: ubuntu-latest
-    steps:
 
       - name: Build Components
         run: yarn build

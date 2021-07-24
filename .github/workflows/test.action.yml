@@ -1,10 +1,10 @@
-name: Run test
+name: Test
 
-on:
-  pull_request:
+on: [push, pull_request]
 
 jobs:
   test:
+    name: Test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
