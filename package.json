@@ -8,11 +8,13 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "build": "yarn build:esm && yarn build:cjs",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
+    "build:esm": "tsc && tscpaths -p tsconfig.json -s src -o lib/esm",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs && tscpaths -p tsconfig.json -s src -o lib/cjs",
     "build:storybook": "build-storybook",
     "storybook": "start-storybook -p 6006 --no-manager-cache",
-    "storybook:cache": "start-storybook -p 6006"
+    "storybook:cache": "start-storybook -p 6006",
+    "theme:types": "chakra-cli tokens ./src/theme/index.ts",
+    "postinstall": "yarn theme:types"
   },
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
@@ -21,10 +23,12 @@
     "@chakra-ui/react": "^1.6.4",
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
-    "framer-motion": "^4.1.17"
+    "chroma-js": "^2.1.2",
+    "framer-motion": "^4.1.17",
+    "react-icons": "^4.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.6",
+    "@chakra-ui/cli": "^1.5.0",
     "@storybook/addon-actions": "^6.3.2",
     "@storybook/addon-essentials": "^6.3.2",
     "@storybook/addon-links": "^6.3.2",
@@ -34,12 +38,12 @@
     "@storybook/theming": "^6.3.2",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
+    "@types/chroma-js": "^2.1.3",
     "@types/jest": "^26.0.23",
     "@types/react": "^17.0.13",
     "@types/react-dom": "^17.0.8",
     "@typescript-eslint/eslint-plugin": "^4.21.0",
     "@typescript-eslint/parser": "^4.21.0",
-    "babel-loader": "^8.2.2",
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-prettier": "^3.3.1",
@@ -50,7 +54,9 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "ts-jest": "^27.0.3",
+    "tsconfig-paths": "^3.10.1",
     "tsconfig-paths-webpack-plugin": "^3.5.1",
+    "tscpaths": "^0.0.9",
     "typescript": "^4.3.5"
   },
   "peerDependencies": {

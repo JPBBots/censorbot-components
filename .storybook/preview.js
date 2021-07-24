@@ -1,5 +1,6 @@
 import theme from '../src/theme/index.ts'
 import { CSSReset, ChakraProvider } from '@chakra-ui/react'
+import { CCProvider } from "../src/utils/CCProvider/CCProvider";
 
 
 export const parameters = {
@@ -12,11 +13,14 @@ export const parameters = {
   },
 }
 
-export const decorators = [
-  (Story) => (
-    <ChakraProvider theme={theme}>
-      <CSSReset />
+const withChakra = (Story) =>
+  (
+    <CCProvider>
       <Story />
-    </ChakraProvider>
+    </CCProvider>
   )
+
+
+export const decorators = [
+  withChakra
 ]

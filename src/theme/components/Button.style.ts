@@ -2,30 +2,63 @@ import { ComponentStyleConfig, DeepPartial } from '@chakra-ui/react'
 
 export const ButtonStyle: DeepPartial<ComponentStyleConfig> = {
   baseStyle: {
-    color: 'white',
-    rounded: '5px',
+    rounded: 'sm',
+    textStyle: 'button',
+    boxShadow: 'no-outline',
+    transition:
+      'color .1s ease, box-shadow .2s ease, background-color .1s ease',
+    color: 'lighter.80',
+    _hover: {
+      color: 'lighter.100',
+    },
+    _active: {
+      color: 'lighter.100',
+    },
+    _focus: {
+      color: 'lighter.100',
+      boxShadow: 'outline',
+    },
   },
   variants: {
+    none: {},
     default: {
-      bg: 'rgba(255, 255, 255, .05)',
+      bg: 'lighter.5',
       _hover: {
-        bg: 'rgba(255, 255, 255, .1)',
+        bg: 'lighter.10',
+      },
+      _active: {
+        bg: 'lighter.20',
       },
     },
     primary: {
-      bg: 'rgba(234, 84, 84, .2)',
+      bg: 'brand.20',
       _hover: {
-        bg: 'rgba(234, 84, 84, .8)',
+        bg: 'brand.80',
+      },
+      _active: {
+        bg: 'brand.100',
+      },
+      _focus: {
+        boxShadow: 'anti-outline',
       },
     },
   },
   sizes: {
+    none: {
+      py: 'xs',
+      px: 'sm',
+    },
     sm: {
-      p: '8px 16px',
+      py: 'xs',
+      px: 'sm',
+    },
+    md: {
+      py: 'sm',
+      px: 'md',
     },
   },
   defaultProps: {
     variant: 'default',
-    size: 'sm',
+    size: 'md',
   },
 }

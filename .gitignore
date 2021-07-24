@@ -1,6 +1,8 @@
 
 # Custom stuff #
 lib/
+.vsc/
+.idea/
 
 ### Node ###
 # Logs

@@ -22,10 +22,8 @@
         "react",
         "@typescript-eslint"
     ],
+    "ignorePatterns": ["lib/"],
     "rules": {
-        "prettier/prettier": ["error", {
-            "endOfLine": "auto"
-        }],
         "react/display-name": "off",
         "react/no-children-prop": "off",
         "@typescript-eslint/ban-ts-comment": "off",
@@ -48,13 +46,12 @@
             "error",
             "windows"
         ],
-        "quotes": [
-            "error",
-            "single"
-        ],
         "semi": [
             "error",
             "never"
-        ]
+        ],
+        "prettier/prettier": ["error", {
+            "endOfLine": "auto"
+        }]
     }
 }
