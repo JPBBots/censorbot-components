@@ -1,2 +1,5 @@
-src/
+src/__stories__
+src/utils
+src/views
+src/index.ts
 node_modules/

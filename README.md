@@ -36,7 +36,7 @@ You will need to manually add a script to generate types for now until another s
 {
   ...
   "scripts": {
-    "postinstall": "npx @chakra-ui/cli tokens ./node_modules/@jpbbots/censorbot-components/lib/theme/index.js"
+    "postinstall": "npx @chakra-ui/cli tokens ./node_modules/@jpbbots/censorbot-components/src/theme/index.ts"
   }
   ...
 }
