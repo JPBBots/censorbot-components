@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.17 (2021-07-25)
+
+
+### Bug Fixes
+
+* add npx to copyfiles for outside imports ([decb47f](https://github.com/JPBBots/censorbot-components/commit/decb47f6eebf3f01ea993f5169e3479cea4591fe))
+
+
+
+
+
 ## 1.1.16 (2021-07-25)
 
 
