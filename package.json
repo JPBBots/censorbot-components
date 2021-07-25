@@ -70,8 +70,7 @@
     "typescript": "^4.3.5"
   },
   "files": [
-    "lib/",
-    "src/theme/"
+    "lib/"
   ],
   "husky": {
     "hooks": {
