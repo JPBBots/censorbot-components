@@ -30,6 +30,18 @@ Or with yarn
 yarn add @jpbbots/censorbot-components
 ```
 
+### Theme types
+You will need to manually add a script to generate types for now until another solution is available.
+```json
+{
+  ...
+  "scripts": {
+    "postinstall": "npx @chakra-ui/cli tokens ./node_modules/@jpbbots/censorbot-components/lib/theme/index.js"
+  }
+  ...
+}
+```
+
 ### Dependencies
 
 - [@chakra-ui/react ^1.6.4](https://www.npmjs.com/package/@chakra-ui/react) - Our choice of component theming
