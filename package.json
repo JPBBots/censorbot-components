@@ -1,5 +1,6 @@
 {
   "name": "@jpbbots/censorbot-components",
+  "description": "censorbot-components is a component library built on top of the Chakra UI theming library.",
   "version": "1.1.19",
   "author": "Xyoyu <ken@slinky.link>",
   "license": "MIT",
@@ -25,6 +26,7 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
+    "typescript": "^4.3.5",
     "@chakra-ui/cli": "^1.5.0",
     "@chakra-ui/react": "^1.6.4",
     "@emotion/react": "^11.4.0",
@@ -62,8 +64,7 @@
     "ts-jest": "^27.0.4",
     "tsconfig-paths": "^3.10.1",
     "tsconfig-paths-webpack-plugin": "^3.5.1",
-    "tscpaths": "^0.0.9",
-    "typescript": "^4.3.5"
+    "tscpaths": "^0.0.9"
   },
   "peerDependencies": {
     "react": "^17.0.2",
