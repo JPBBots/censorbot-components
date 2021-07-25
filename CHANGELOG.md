@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.16 (2021-07-25)
+
+
+### Bug Fixes
+
+* huge fix on build and i nstall issues ([8e41a9a](https://github.com/JPBBots/censorbot-components/commit/8e41a9aa94c343475b1ac5c931b2d7c09a7e56fe))
+
+
+
+
+
 ## 1.1.15 (2021-07-25)
 
 **Note:** Version bump only for package @jpbbots/censorbot-components
