@@ -10,7 +10,7 @@
     "build:storybook": "build-storybook",
     "storybook": "start-storybook -p 6006 --no-manager-cache",
     "storybook:cache": "start-storybook -p 6006",
-    "theme:move-types": "copyfiles -f ./lib/theming.types.d.ts ./node_modules/@chakra-ui/styled-system/dist/types",
+    "theme:move-types": "npx copyfiles -f ./lib/theming.types.d.ts ./node_modules/@chakra-ui/styled-system/dist/types",
     "theme:types": "chakra-cli tokens ./lib/theme/index.js --out ./lib/theming.types.d.ts",
     "postbuild": "yarn theme:types && yarn theme:move-types",
     "postinstall": "yarn theme:move-types"
@@ -26,7 +26,6 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
-    "@chakra-ui/cli": "^1.5.0",
     "@chakra-ui/react": "^1.6.4",
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
@@ -35,6 +34,7 @@
     "react-icons": "^4.2.0"
   },
   "devDependencies": {
+    "@chakra-ui/cli": "^1.5.0",
     "@storybook/addon-actions": "^6.3.2",
     "@storybook/addon-essentials": "^6.3.2",
     "@storybook/addon-links": "^6.3.2",
