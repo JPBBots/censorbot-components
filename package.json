@@ -12,8 +12,8 @@
     "build:storybook": "build-storybook",
     "storybook": "start-storybook -p 6006 --no-manager-cache",
     "storybook:cache": "start-storybook -p 6006",
-    "theme:types": "npx @chakra-ui/cli tokens src/theme/index.ts",
-    "postinstall": "yarn theme:types"
+    "theme:types": "chakra-cli tokens ./src/theme/index.ts",
+    "postinstall": "npm run theme:types"
   },
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
