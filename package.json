@@ -12,7 +12,7 @@
     "build:storybook": "build-storybook",
     "storybook": "start-storybook -p 6006 --no-manager-cache",
     "storybook:cache": "start-storybook -p 6006",
-    "theme:types": "npx chakra-cli tokens ./src/theme/index.ts",
+    "theme:types": "npx @chakra-ui/cli tokens src/theme/index.ts",
     "postinstall": "yarn theme:types"
   },
   "main": "./lib/cjs/index.js",
