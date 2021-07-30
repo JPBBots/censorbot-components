@@ -3,6 +3,7 @@ import { ChakraTheme, ThemeOverride } from '@chakra-ui/react'
 // These imports need to be local for theme type generation
 import { colors } from './colors'
 import { textStyles } from './textStyles'
+import { InputStyle as Input } from './components/Input.style'
 import { ButtonStyle as Button } from './components/Button.style'
 import { SwitchStyle as Switch } from './components/Switch.style'
 
@@ -89,7 +90,17 @@ const theme: ThemeOverride<ChakraTheme> = {
     xxl: '48px',
   },
   components: {
+    Icon: { baseStyle: { color: 'inherit' } },
     Text: { baseStyle: { color: 'lighter.80', textStyle: 'default' } },
+    Divider: {
+      baseStyle: {
+        bg: 'transparent',
+        borderWidth: '1px',
+        borderStyle: 'solid',
+        borderColor: 'currentColor',
+      },
+    },
+    Input,
     Switch,
     Button,
   },

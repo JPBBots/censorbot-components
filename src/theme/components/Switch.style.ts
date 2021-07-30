@@ -1,6 +1,6 @@
-import { ComponentStyleConfig, DeepPartial } from '@chakra-ui/react'
+import { ComponentStyleConfig } from '@chakra-ui/react'
 
-export const SwitchStyle: DeepPartial<ComponentStyleConfig> = {
+export const SwitchStyle: ComponentStyleConfig = {
   baseStyle: {
     container: {
       display: 'inline-flex',

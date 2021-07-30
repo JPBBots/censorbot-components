@@ -1,6 +1,6 @@
-import { ComponentStyleConfig, DeepPartial } from '@chakra-ui/react'
+import { ComponentStyleConfig } from '@chakra-ui/react'
 
-export const ButtonStyle: DeepPartial<ComponentStyleConfig> = {
+export const ButtonStyle: ComponentStyleConfig = {
   baseStyle: {
     rounded: 'sm',
     textStyle: 'label.md',
