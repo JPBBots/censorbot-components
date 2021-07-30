@@ -1,4 +1,4 @@
-import { ChakraTheme, DeepPartial } from '@chakra-ui/react'
+import { ChakraTheme, ThemeOverride } from '@chakra-ui/react'
 
 // These imports need to be local for theme type generation
 import { colors } from './colors'
@@ -18,7 +18,7 @@ const baseFillStyle = {
   textRendering: 'optimizeLegibility',
 } as const
 
-const theme: DeepPartial<ChakraTheme> = {
+const theme: ThemeOverride<ChakraTheme> = {
   config: {
     cssVarPrefix: 'ccvars',
     initialColorMode: DEFAULT_COLOR_MODE,
