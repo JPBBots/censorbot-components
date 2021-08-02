@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.28 (2021-08-02)
+
+
+### Bug Fixes
+
+* help combat theme flash ([b4ec28e](https://github.com/JPBBots/censorbot-components/commit/b4ec28e4001c85c3e3e370325858f3db96a9838a))
+
+
+
+
+
 ## 1.1.27 (2021-07-31)
 
 
