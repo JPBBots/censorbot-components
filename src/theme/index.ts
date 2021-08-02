@@ -10,7 +10,7 @@ import { SwitchStyle as Switch } from './components/Switch.style'
 export const DEFAULT_COLOR_MODE = 'dark'
 
 const baseFillStyle = {
-  bg: 'bg',
+  bg: colors.bg,
   d: 'flex',
   flexGrow: 1,
   h: '100%',

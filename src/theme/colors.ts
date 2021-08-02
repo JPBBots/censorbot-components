@@ -5,6 +5,7 @@ const light = hex('#ffffff')
 const brand = hex('#ea5454')
 
 export const colors = {
+  bg: '#161e2e',
   outline: brand.hex(),
   lighter: {
     5: light.alpha(0.05).hex(),
