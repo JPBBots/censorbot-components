@@ -2,7 +2,7 @@ import { Meta } from '@storybook/react'
 import { VStack, Textarea } from '@chakra-ui/react'
 
 export default {
-  title: 'Textarea',
+  title: 'Inputs/Textarea',
   component: Textarea,
 } as Meta
 

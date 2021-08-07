@@ -8,7 +8,7 @@ import {
 } from '@chakra-ui/react'
 
 export default {
-  title: 'Number Input',
+  title: 'Inputs/Number Input',
   component: NumberInput,
 } as Meta
 

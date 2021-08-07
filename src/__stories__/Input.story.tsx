@@ -2,7 +2,7 @@ import { Meta } from '@storybook/react'
 import { VStack, Input } from '@chakra-ui/react'
 
 export default {
-  title: 'Input',
+  title: 'Inputs/Input',
   component: Input,
 } as Meta
 

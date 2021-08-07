@@ -2,7 +2,7 @@ import { Meta } from '@storybook/react'
 import { VStack, Switch } from '@chakra-ui/react'
 
 export default {
-  title: 'Switch',
+  title: 'Inputs/Switch',
   component: Switch,
 } as Meta
 
