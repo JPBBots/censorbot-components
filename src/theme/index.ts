@@ -6,6 +6,7 @@ import { textStyles } from './textStyles'
 import { InputStyle as Input } from './components/Input.style'
 import { ButtonStyle as Button } from './components/Button.style'
 import { SwitchStyle as Switch } from './components/Switch.style'
+import { SelectStyle as Select } from './components/Select.style'
 import { TextareaStyle as Textarea } from './components/Textarea.style'
 import { NumberInputStyle as NumberInput } from './components/NumberInput.style'
 
@@ -107,6 +108,7 @@ const theme: ThemeOverride<ChakraTheme> = {
     Input,
     Switch,
     Button,
+    Select,
     Textarea,
     NumberInput,
   },
