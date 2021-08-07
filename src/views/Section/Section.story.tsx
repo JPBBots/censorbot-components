@@ -1,4 +1,4 @@
-import { Section } from './index'
+import { Section } from './Section'
 import type { Meta } from '@storybook/react'
 import { FaAt, FaHashtag } from 'react-icons/fa'
 import { HStack, Box, Icon, VStack } from '@chakra-ui/react'

@@ -10,7 +10,7 @@ export * from '@/views/Category/Option/CategoryOption'
 
 export * from '@/views/NavActions/NavActions'
 
-export * from '@/views/Section'
-export * from '@/views/Option'
+export * from '@/views/Section/Section'
+export * from '@/views/Option/Option'
 
 export default CCProvider

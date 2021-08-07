@@ -1,5 +1,5 @@
-import { Option } from './index'
-import { Section } from '@/views/Section'
+import { Option } from '@/views/Option/Option'
+import { Section } from '@/views/Section/Section'
 import type { Meta } from '@storybook/react'
 import { VStack } from '@chakra-ui/react'
 
