@@ -36,7 +36,7 @@ export const NextFontHead = () => (
   </>
 )
 
-/** Wrapper to allow usage of the components within this library. */
+/** Wrapper to allow usage of the components within this library */
 export const CCProvider = ({
   cookies,
   useCssReset = true,
