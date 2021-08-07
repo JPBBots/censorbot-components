@@ -4,9 +4,12 @@
   "command": {
     "publish": {
       "conventionalCommits": true,
-      "message": "chore(release): release & version bump",
       "registry": "https://npm.pkg.github.com/"
     }
+  },
+  "changelogPreset": {
+    "name": "conventionalcommits",
+    "issueUrlFormat": "{{host}}/{{owner}}/{{repository}}/issues/{{id}}"
   },
   "packages": [
     "./"
