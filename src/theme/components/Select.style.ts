@@ -23,7 +23,7 @@ export const SelectStyle: ComponentStyleConfig = {
     },
     icon: {
       flexShrink: 0,
-      insetEnd: 2,
+      insetEnd: 0,
     },
   },
   sizes: {
@@ -35,7 +35,7 @@ export const SelectStyle: ComponentStyleConfig = {
       },
       icon: {
         p: 4,
-        fontSize: 24,
+        fontSize: 28,
       },
     },
   },
