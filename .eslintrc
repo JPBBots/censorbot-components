@@ -8,6 +8,9 @@
     "settings": {
         "react": {
             "version": "detect"
+        },
+        "import/resolver": {
+            "typescript": {}
         }
     },
     "parserOptions": {

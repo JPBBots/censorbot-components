@@ -8,17 +8,24 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "build": "npm run build:cjs && npm run build:esm",
-    "build:esm": "tsc && tscpaths -p tsconfig.esm.json -s src -o lib/esm",
-    "build:cjs": "tsc && tscpaths -p tsconfig.cjs.json -s src -o lib/cjs",
+    "build:esm": "tsc -p tsconfig.esm.json && tscpaths -p tsconfig.esm.json -s src -o lib/esm",
+    "build:cjs": "tsc -p tsconfig.cjs.json && tscpaths -p tsconfig.cjs.json -s src -o lib/cjs",
     "build:storybook": "build-storybook",
     "storybook": "start-storybook -p 6006 --no-manager-cache",
     "storybook:cache": "start-storybook -p 6006",
     "theme:types": "chakra-cli tokens ./lib/cjs/theme/index.js",
-    "postbuild": "npm run theme:types"
+    "postbuild": "npm run theme:types",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "prettier": "prettier --write src/**/*.*"
   },
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
+  "exports": {
+    "require": "./lib/cjs/index.js",
+    "import": "./lib/esm/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/JPBBots/censorbot-components.git"
@@ -57,11 +64,14 @@
     "@typescript-eslint/parser": "^4.21.0",
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.23.1",
     "fork-ts-checker-webpack-plugin": "^6.2.12",
+    "husky": "^7.0.1",
     "jest": "^27.0.6",
     "lerna": "^4.0.0",
+    "lint-staged": "^11.1.2",
     "prettier": "^2.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
