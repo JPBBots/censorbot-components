@@ -9,7 +9,7 @@ export default {
 } as Meta
 
 const children = (
-  <HStack spacing="md">
+  <HStack spacing={4}>
     <Box boxSize="48px" rounded="md" bg="lighter.5" />
     <Box boxSize="48px" rounded="md" bg="lighter.5" />
     <Box boxSize="48px" rounded="md" bg="lighter.5" />
@@ -51,7 +51,7 @@ export const _SectionIsPremium = () => (
 )
 
 export const _ALL_SECTIONS = () => (
-  <VStack spacing="md">
+  <VStack spacing={4}>
     <_Section />
     <_SectionWithTitle />
     <_SectionWithTitleAndDescription />

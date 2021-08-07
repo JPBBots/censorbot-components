@@ -11,7 +11,7 @@ export default {
 
 export const _Category = () => (
   <VStack>
-    <VStack w="308px" spacing="sm">
+    <VStack w="308px">
       <Category title="Category Title">
         <CategoryOption
           isSelected

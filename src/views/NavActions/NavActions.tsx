@@ -37,8 +37,8 @@ export const NavActions = ({
   customAsLink,
   ...stackProps
 }: NavActionsProps) => (
-  <HStack spacing="md" {...stackProps}>
-    <HStack spacing="sm">
+  <HStack spacing={4} {...stackProps}>
+    <HStack spacing={2}>
       {actions.map((action, i) => {
         const withLinkProps = action.href
           ? { as: customAsLink || Link, href: action.href }
@@ -58,7 +58,7 @@ export const NavActions = ({
         )
       })}
       {!user && (
-        <Box pl="sm">
+        <Box pl={2}>
           <Button variant="primary" size="sm" onClick={onLogin}>
             Login
           </Button>
@@ -67,9 +67,9 @@ export const NavActions = ({
     </HStack>
     {user && (
       <HStack
-        spacing="sm"
+        h={8}
+        spacing={2}
         rounded="sm"
-        h="md"
         as={Button}
         size="none"
         variant="none"
@@ -77,9 +77,9 @@ export const NavActions = ({
         _hover={{ bg: 'lighter.5', color: 'lighter.100' }}
         _focus={{ bg: 'lighter.10', color: 'lighter.100' }}
       >
-        <Avatar boxSize="lg" src={user.avatarUrl} />
+        <Avatar boxSize={12} src={user.avatarUrl} />
         <Center>
-          <Icon boxSize="xs" as={FaChevronDown} color="currentColor" />
+          <Icon boxSize={4} as={FaChevronDown} color="currentColor" />
         </Center>
       </HStack>
     )}

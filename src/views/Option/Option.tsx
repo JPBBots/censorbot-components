@@ -31,7 +31,7 @@ export const Option = ({
       <HStack
         as="label"
         htmlFor={name}
-        p="md"
+        p={4}
         w="full"
         rounded="sm"
         color={color}
@@ -41,8 +41,8 @@ export const Option = ({
         _hover={{ bg: 'lighter.5' }}
         pointerEvents={isDisabled ? 'none' : 'all'}
       >
-        <HStack spacing="md">
-          {isPremium && <Icon size="sm" as={FaCrown} />}
+        <HStack spacing={4}>
+          {isPremium && <Icon size={4} as={FaCrown} />}
           <Text textStyle="heading.sm" color="inherit">
             {label}
           </Text>

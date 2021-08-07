@@ -45,16 +45,16 @@ export const ButtonStyle: ComponentStyleConfig = {
   },
   sizes: {
     none: {
-      py: 'xs',
-      px: 'sm',
+      py: 1,
+      px: 2,
     },
     sm: {
-      py: 'xs',
-      px: 'sm',
+      py: 1,
+      px: 2,
     },
     md: {
-      py: 'sm',
-      px: 'md',
+      py: 2,
+      px: 4,
     },
   },
   defaultProps: {

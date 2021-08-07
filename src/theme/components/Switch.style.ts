@@ -13,7 +13,7 @@ export const SwitchStyle: ComponentStyleConfig = {
     },
     track: {
       borderRadius: 'full',
-      p: '4px',
+      p: 1,
       width: 'var(--slider-track-width)',
       height: 'var(--slider-track-height)',
       transitionProperty: 'common',

@@ -19,11 +19,11 @@ export const CategoryOption = ({
 }: CategoryOptionProps) => (
   <Box
     as={Button}
-    p="sm"
+    p={2}
     w="full"
     flexGrow={1}
     rounded="sm"
-    bg={isSelected ? 'lighter.5' : 'transparent'}
+    bg={isSelected ? 'lighter.10' : 'transparent'}
     color={isSelected ? 'lighter.100' : 'lighter.60'}
     _hover={{ bg: 'lighter.5' }}
     _active={{ bg: 'lighter.10' }}
@@ -31,7 +31,7 @@ export const CategoryOption = ({
     {...boxProps}
   >
     <HStack justify="space-between" w="full" flexGrow={1}>
-      <HStack spacing="md">
+      <HStack spacing={4}>
         <Center color={isSelected ? 'lighter.100' : 'lighter.20'}>
           {icon}
         </Center>

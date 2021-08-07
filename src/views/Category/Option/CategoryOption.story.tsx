@@ -10,7 +10,7 @@ export default {
 
 export const _Option = () => (
   <VStack>
-    <VStack w="308px" spacing="sm">
+    <VStack w="308px" spacing={1}>
       <CategoryOption
         isSelected
         icon={<Icon as={FaCog} />}

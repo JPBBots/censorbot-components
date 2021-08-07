@@ -22,9 +22,9 @@ export const Section = ({
 
   return (
     <VStack
-      p="md"
+      p={4}
       w="full"
-      spacing="md"
+      spacing={4}
       rounded="md"
       align="start"
       bg="darker.20"
@@ -32,7 +32,7 @@ export const Section = ({
       {hasHeading && (
         <Fragment>
           {title && (
-            <HStack spacing="md" justify="start" color={activeColor}>
+            <HStack spacing={4} justify="start" color={activeColor}>
               {icon}
               <Text textStyle="heading.sm" color="inherit">
                 {title}

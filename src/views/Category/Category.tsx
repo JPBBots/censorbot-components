@@ -6,12 +6,14 @@ export interface CategoryProps extends StackProps {
 }
 
 export const Category = ({ title, children, ...stackProps }: CategoryProps) => (
-  <VStack w="full" flexGrow={1} spacing="none" align="start" {...stackProps}>
-    <Box p="sm">
+  <VStack w="full" flexGrow={1} spacing={0} align="start" {...stackProps}>
+    <Box p={2}>
       <Text textStyle="overline" color="lighter.80">
         {title}
       </Text>
     </Box>
-    {children}
+    <VStack w="full" align="start" spacing={1}>
+      {children}
+    </VStack>
   </VStack>
 )

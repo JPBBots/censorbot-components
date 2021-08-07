@@ -20,6 +20,28 @@ const baseFillStyle = {
   textRendering: 'optimizeLegibility',
 } as const
 
+const sizing = {
+  0: '0px',
+  1: '4px',
+  2: '8px',
+  3: '12px',
+  4: '16px',
+  5: '20px',
+  6: '24px',
+  7: '28px',
+  8: '32px',
+  9: '36px',
+  10: '40px',
+  11: '44px',
+  12: '48px',
+  13: '52px',
+  14: '56px',
+  15: '60px',
+  16: '64px',
+  half: '50%',
+  full: '100%',
+}
+
 const theme: ThemeOverride<ChakraTheme> = {
   config: {
     cssVarPrefix: 'ccvars',
@@ -61,34 +83,14 @@ const theme: ThemeOverride<ChakraTheme> = {
   },
   colors,
   textStyles,
-  sizes: {
-    none: '0px',
-    xxs: '8px',
-    xs: '12px',
-    sm: '16px',
-    md: '32px',
-    lg: '48px',
-    xl: '64px',
-    half: '50%',
-    full: '100%',
-  },
+  sizes: sizing,
+  space: sizing,
   radii: {
     none: '0px',
     sm: '5px',
     md: '10px',
     lg: '20px',
     full: '9999px',
-  },
-  space: {
-    none: '0px',
-    px: '1px',
-    xxs: '2px',
-    xs: '4px',
-    sm: '8px',
-    md: '16px',
-    lg: '24px',
-    xl: '32px',
-    xxl: '48px',
   },
   components: {
     Icon: { baseStyle: { color: 'inherit' } },

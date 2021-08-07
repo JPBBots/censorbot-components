@@ -25,25 +25,25 @@ export default {
 } as Meta
 
 export const _Icons = () => (
-  <VStack spacing="md">
+  <VStack spacing={4}>
     <Text>Icon Range</Text>
-    <Wrap color="lighter.100" spacing="md">
-      <Icon as={FaSearch} boxSize="md" />
-      <Icon as={FaChevronDown} boxSize="md" />
-      <Icon as={FaCog} boxSize="md" />
-      <Icon as={FaHashtag} boxSize="md" />
-      <Icon as={FaAt} boxSize="md" />
-      <Icon as={FaBan} boxSize="md" />
-      <Icon as={FaCommentSlash} boxSize="md" />
-      <Icon as={FaCrown} boxSize="md" />
-      <Icon as={FaVial} boxSize="md" />
-      <Icon as={FaRobot} boxSize="md" />
-      <Icon as={FaLocationArrow} boxSize="md" />
-      <Icon as={FaComments} boxSize="md" />
-      <Icon as={FaCube} boxSize="md" />
-      <Icon as={FaCode} boxSize="md" />
-      <Icon as={FaFilter} boxSize="md" />
-      <Icon as={FaTimes} boxSize="md" />
+    <Wrap color="lighter.100" spacing={4}>
+      <Icon as={FaSearch} boxSize={6} />
+      <Icon as={FaChevronDown} boxSize={6} />
+      <Icon as={FaCog} boxSize={6} />
+      <Icon as={FaHashtag} boxSize={6} />
+      <Icon as={FaAt} boxSize={6} />
+      <Icon as={FaBan} boxSize={6} />
+      <Icon as={FaCommentSlash} boxSize={6} />
+      <Icon as={FaCrown} boxSize={6} />
+      <Icon as={FaVial} boxSize={6} />
+      <Icon as={FaRobot} boxSize={6} />
+      <Icon as={FaLocationArrow} boxSize={6} />
+      <Icon as={FaComments} boxSize={6} />
+      <Icon as={FaCube} boxSize={6} />
+      <Icon as={FaCode} boxSize={6} />
+      <Icon as={FaFilter} boxSize={6} />
+      <Icon as={FaTimes} boxSize={6} />
     </Wrap>
   </VStack>
 )

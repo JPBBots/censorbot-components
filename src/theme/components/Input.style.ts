@@ -21,12 +21,12 @@ export const InputStyle: ComponentStyleConfig = {
     md: {
       field: {
         textStyle: 'default',
-        p: 'md',
+        p: 3,
         rounded: 'md',
       },
       addon: {
         textStyle: 'default',
-        p: 'md',
+        p: 3,
         rounded: 'md',
       },
     },

@@ -17,7 +17,7 @@ export const TextareaStyle: ComponentStyleConfig = {
   sizes: {
     md: {
       textStyle: 'default',
-      p: 'md',
+      p: 3,
       rounded: 'md',
     },
   },
