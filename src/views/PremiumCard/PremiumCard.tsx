@@ -32,41 +32,45 @@ export const PremiumCard = ({
   perks,
   monthlyPrice,
   onBuy = () => {},
-  width = CARD_WIDTH,
+  w = CARD_WIDTH,
   ...stackProps
 }: PremiumCardProps) => (
   <VStack
     p={4}
-    spacing={4}
+    w={w}
+    maxW={w}
     rounded="lg"
-    align="center"
     bg="darker.20"
-    width={width}
+    align="center"
+    justify="space-between"
+    flexGrow={1}
     {...stackProps}
   >
-    <VStack spacing={1}>
-      <Text textStyle="heading.sm" color="lighter.100">
-        {title}
-      </Text>
-      <Text textStyle="label.md" color="brand.100">
-        ${monthlyPrice}/month
-      </Text>
-    </VStack>
-    <VStack w="full" align="start" spacing={4}>
-      {perks.map((perk, i) => (
-        <HStack
-          key={i + perk}
-          w="full"
-          spacing={4}
-          align="center"
-          justify="start"
-        >
-          <Icon as={FaCrown} color="brand.100" boxSize={4} />
-          <Text textStyle="default" color="lighter.100">
-            {perk}
-          </Text>
-        </HStack>
-      ))}
+    <VStack w="full" spacing={4}>
+      <VStack w="full" spacing={1} align="center">
+        <Text textStyle="heading.sm" color="lighter.100">
+          {title}
+        </Text>
+        <Text textStyle="label.md" color="brand.100">
+          ${monthlyPrice}/month
+        </Text>
+      </VStack>
+      <VStack w="full" align="start" spacing={4}>
+        {perks.map((perk, i) => (
+          <HStack
+            key={i + perk}
+            w="full"
+            spacing={4}
+            align="center"
+            justify="start"
+          >
+            <Icon as={FaCrown} color="brand.100" boxSize={4} />
+            <Text textStyle="default" color="lighter.100">
+              {perk}
+            </Text>
+          </HStack>
+        ))}
+      </VStack>
     </VStack>
     <Button w="full" size="md" variant="primary" onClick={onBuy}>
       Buy

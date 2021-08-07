@@ -8,7 +8,7 @@ export default {
 } as Meta
 
 export const _PremiumCard = () => (
-  <HStack spacing={4} justify="center" align="start">
+  <HStack spacing={4} justify="center" align="stretch">
     <PremiumCard
       title="Premium"
       monthlyPrice={5}
