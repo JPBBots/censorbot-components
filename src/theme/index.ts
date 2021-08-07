@@ -6,6 +6,7 @@ import { textStyles } from './textStyles'
 import { InputStyle as Input } from './components/Input.style'
 import { ButtonStyle as Button } from './components/Button.style'
 import { SwitchStyle as Switch } from './components/Switch.style'
+import { TextareaStyle as Textarea } from './components/Textarea.style'
 
 export const DEFAULT_COLOR_MODE = 'dark'
 
@@ -103,6 +104,7 @@ const theme: ThemeOverride<ChakraTheme> = {
     Input,
     Switch,
     Button,
+    Textarea,
   },
 }
 
