@@ -7,16 +7,18 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "build": "tsc && tscpaths -p tsconfig.json -s src -o lib",
+    "build": "npm run build:cjs && npm run build:esm",
+    "build:esm": "tsc && tscpaths -p tsconfig.esm.json -s src -o lib/esm",
+    "build:cjs": "tsc && tscpaths -p tsconfig.cjs.json -s src -o lib/cjs",
     "build:storybook": "build-storybook",
     "storybook": "start-storybook -p 6006 --no-manager-cache",
     "storybook:cache": "start-storybook -p 6006",
-    "theme:types": "chakra-cli tokens ./lib/theme/index.js",
-    "postbuild": "yarn theme:types"
+    "theme:types": "chakra-cli tokens ./lib/cjs/theme/index.js",
+    "postbuild": "npm run theme:types"
   },
-  "main": "./lib/index.js",
-  "module": "./lib/index.js",
-  "types": "./lib/index.d.ts",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/JPBBots/censorbot-components.git"
@@ -71,16 +73,5 @@
   },
   "files": [
     "lib/"
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ]
-  }
+  ]
 }
