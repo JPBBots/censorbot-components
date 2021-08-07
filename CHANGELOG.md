@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0](https://github.com/JPBBots/censorbot-components/compare/@jpbbots/censorbot-components@1.1.30...@jpbbots/censorbot-components@2.0.0) (2021-08-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* changelog stuff
+
+### Documentation
+
+* changelog stuff ([c450777](https://github.com/JPBBots/censorbot-components/commit/c450777e933ed01b0e2ff661b71e0520dd4a1944))
+
+
+
+
 ## 1.1.30 (2021-08-07)
 
 **Note:** Version bump only for package @jpbbots/censorbot-components
