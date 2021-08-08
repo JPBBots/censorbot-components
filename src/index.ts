@@ -8,9 +8,16 @@ export * from '@/theme'
 export * from '@/views/Category/Category'
 export * from '@/views/Category/Option/CategoryOption'
 
+export * from '@/views/GuildPreview/GuildPreview'
+
+export * from '@/views/Header/Header'
+export * from '@/views/Header/CensorBotIcon'
+
 export * from '@/views/NavActions/NavActions'
 
 export * from '@/views/Section/Section'
 export * from '@/views/Option/Option'
+
+export * from '@/views/PremiumCard/PremiumCard'
 
 export default CCProvider
