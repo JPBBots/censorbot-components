@@ -3,6 +3,7 @@ import { ChakraTheme, ThemeOverride } from '@chakra-ui/react'
 // These imports need to be local for theme type generation
 import { colors } from './colors'
 import { textStyles } from './textStyles'
+import { MenuStyle as Menu } from './components/Menu.style'
 import { InputStyle as Input } from './components/Input.style'
 import { ButtonStyle as Button } from './components/Button.style'
 import { SwitchStyle as Switch } from './components/Switch.style'
@@ -105,6 +106,7 @@ const theme: ThemeOverride<ChakraTheme> = {
         borderColor: 'currentColor',
       },
     },
+    Menu,
     Input,
     Switch,
     Button,

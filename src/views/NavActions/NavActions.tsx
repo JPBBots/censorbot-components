@@ -1,15 +1,15 @@
-import type { FunctionComponent } from 'react'
+import type { FunctionComponent, PropsWithChildren } from 'react'
 import type { StackProps } from '@chakra-ui/react'
 import {
+  Box,
   Button,
   HStack,
   Link,
-  Box,
-  Avatar,
-  Icon,
-  Center,
+  Menu,
+  MenuButton,
+  MenuList,
 } from '@chakra-ui/react'
-import { FaChevronDown } from 'react-icons/fa'
+import { AvatarDropdownAction } from '@/views/NavActions/AvatarDropdownAction/AvatarDropdownAction'
 
 export type NavUserType = {
   avatarUrl: string
@@ -22,7 +22,8 @@ export type NavActionType = {
   onClick?(): void
 }
 
-export interface NavActionsProps extends Omit<StackProps, 'children'> {
+export interface NavActionsProps
+  extends PropsWithChildren<Omit<StackProps, 'children'>> {
   actions: Array<NavActionType>
   user?: NavUserType
   onLogin?(): void
@@ -35,6 +36,7 @@ export const NavActions = ({
   user,
   onLogin = () => {},
   customAsLink,
+  children,
   ...stackProps
 }: NavActionsProps) => (
   <HStack spacing={4} {...stackProps}>
@@ -66,22 +68,10 @@ export const NavActions = ({
       )}
     </HStack>
     {user && (
-      <HStack
-        h={8}
-        spacing={2}
-        rounded="sm"
-        as={Button}
-        size="none"
-        variant="none"
-        color="lighter.60"
-        _hover={{ bg: 'lighter.5', color: 'lighter.100' }}
-        _focus={{ bg: 'lighter.10', color: 'lighter.100' }}
-      >
-        <Avatar boxSize={12} src={user.avatarUrl} />
-        <Center>
-          <Icon boxSize={4} as={FaChevronDown} color="currentColor" />
-        </Center>
-      </HStack>
+      <Menu gutter={16}>
+        <MenuButton as={AvatarDropdownAction} {...user} />
+        <MenuList>{children}</MenuList>
+      </Menu>
     )}
   </HStack>
 )
