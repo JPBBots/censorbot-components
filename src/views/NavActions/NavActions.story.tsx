@@ -1,5 +1,5 @@
 import type { Meta } from '@storybook/react'
-import { VStack } from '@chakra-ui/react'
+import { VStack, MenuItem } from '@chakra-ui/react'
 import { action } from '@storybook/addon-actions'
 import { NavActions } from '@/views/NavActions/NavActions'
 
@@ -30,6 +30,10 @@ export const _LoggedIn = () => (
         { label: 'Support', onClick: action('onSupportClick') },
         { label: 'Dashboard', onClick: action('onDashboardClick') },
       ]}
-    />
+    >
+      <MenuItem>Hello</MenuItem>
+      <MenuItem>Action</MenuItem>
+      <MenuItem>Lol</MenuItem>
+    </NavActions>
   </VStack>
 )

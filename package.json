@@ -1,7 +1,7 @@
 {
   "name": "@jpbbots/censorbot-components",
   "description": "censorbot-components is a component library built on top of the Chakra UI theming library.",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "author": "Xyoyu <ken@slinky.link>",
   "license": "MIT",
   "scripts": {
@@ -10,9 +10,10 @@
     "build": "npm run build:cjs && npm run build:esm",
     "build:esm": "tsc -p tsconfig.esm.json && tscpaths -p tsconfig.esm.json -s src -o lib/esm",
     "build:cjs": "tsc -p tsconfig.cjs.json && tscpaths -p tsconfig.cjs.json -s src -o lib/cjs",
-    "build:storybook": "build-storybook",
     "storybook": "start-storybook -p 6006 --no-manager-cache",
     "storybook:cache": "start-storybook -p 6006",
+    "build:storybook": "build-storybook",
+    "deploy:storybook": "storybook-to-ghpages",
     "theme:types": "chakra-cli tokens ./lib/cjs/theme/index.js",
     "postbuild": "npm run theme:types",
     "lint": "eslint src",
@@ -26,6 +27,9 @@
     "require": "./lib/cjs/index.js",
     "import": "./lib/esm/index.js"
   },
+  "files": [
+    "lib/"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/JPBBots/censorbot-components.git"
@@ -53,6 +57,7 @@
     "@storybook/addons": "^6.3.2",
     "@storybook/cli": "^6.3.2",
     "@storybook/react": "^6.3.5",
+    "@storybook/storybook-deployer": "^2.8.10",
     "@storybook/theming": "^6.3.5",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
@@ -82,7 +87,9 @@
     "tscpaths": "^0.0.9",
     "typescript": "^4.3.5"
   },
-  "files": [
-    "lib/"
-  ]
+  "storybook-deployer": {
+    "gitUsername": "CBC Bot",
+    "gitEmail": "cbc-bot@users.noreply.github.com",
+    "commitMessage": "Deploy Storybook"
+  }
 }
