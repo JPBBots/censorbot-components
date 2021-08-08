@@ -119,7 +119,7 @@ export default class Document extends NextDocument {
 ```
 
 ## Links
-- [Components Storybook](#Links) - Coming Soon
+- [Components Storybook](https://eager-minsky-34b5ea.netlify.app/)
 - [JPBBots Discord server](https://jpbbots.org/support)
 
 ## Help
