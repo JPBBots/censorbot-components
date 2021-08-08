@@ -10,7 +10,7 @@ export interface HeaderProps extends PropsWithChildren<unknown> {
 }
 
 export const Header = ({ title, children }: HeaderProps) => (
-  <HStack px={8} h={HEADER_HEIGHT} justify="space-between">
+  <HStack px={8} h={HEADER_HEIGHT} justify="space-between" w="full">
     <HStack spacing={4}>
       <CensorBotIcon boxSize={ICON_SIZE} />
       <Text as="h1" color="lighter.100" textStyle="heading.xl">
