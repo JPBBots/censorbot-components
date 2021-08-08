@@ -7,6 +7,7 @@
   <p>
     <a href="https://jpbbots.org/support"><img src="https://img.shields.io/discord/399688888739692552?color=f44847&logo=discord&logoColor=white" alt="Discord server" /></a>
     <a href="https://github.com/JPBBots/censorbot-components/actions"><img src="https://github.com/JPBBots/censorbot-components/actions/workflows/test.action.yml/badge.svg" alt="Test" /></a>
+    <a href="https://app.netlify.com/sites/eager-minsky-34b5ea/deploys"><img src="https://api.netlify.com/api/v1/badges/5ce98137-50f5-48e2-9252-9f442a2eb7cc/deploy-status" alt="Netlify Status" /></a>
   </p>
 </div>
 
