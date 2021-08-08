@@ -3,6 +3,7 @@
 lib/
 .vsc/
 .idea/
+storybook-static/
 
 ### Node ###
 # Logs
