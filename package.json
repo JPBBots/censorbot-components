@@ -12,7 +12,7 @@
     "build:cjs": "tsc -p tsconfig.cjs.json && tscpaths -p tsconfig.cjs.json -s src -o lib/cjs",
     "storybook": "start-storybook -p 6006 --no-manager-cache",
     "storybook:cache": "start-storybook -p 6006",
-    "deploy:storybook": "storybook-to-ghpages",
+    "build:storybook": "build-storybook",
     "theme:types": "chakra-cli tokens ./lib/cjs/theme/index.js",
     "postbuild": "npm run theme:types",
     "lint": "eslint src",
