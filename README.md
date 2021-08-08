@@ -56,7 +56,7 @@ You will need to manually add a script to generate types for now until another s
 - [react ^17.0.2](https://www.npmjs.com/package/react)
 - [react-dom ^17.0.2](https://www.npmjs.com/package/react-dom)
 
-## Example usage
+## Example usage 
 
 ### General React
 Wrap your React app with the CCProvider component:
