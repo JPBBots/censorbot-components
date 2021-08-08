@@ -1,7 +1,7 @@
 {
   "name": "@jpbbots/censorbot-components",
   "description": "censorbot-components is a component library built on top of the Chakra UI theming library.",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "author": "Xyoyu <ken@slinky.link>",
   "license": "MIT",
   "scripts": {

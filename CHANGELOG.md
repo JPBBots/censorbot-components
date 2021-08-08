@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 2.1.6 (2021-08-08)
+
+
+### Bug Fixes
+
+* Stretch header to screen ([a780f41](https://github.com/JPBBots/censorbot-components/commit/a780f41cc860ede96bbe196bd8d0401a6b4b9084))
+
+
+
 ### 2.1.5 (2021-08-08)
 
 
