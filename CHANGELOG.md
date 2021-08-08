@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2.1.0 (2021-08-08)
+
+
+### Features
+
+* Menu component + NavActions fixes ([#22](https://github.com/JPBBots/censorbot-components/issues/22)) ([2f17446](https://github.com/JPBBots/censorbot-components/commit/2f174463af50af0eabc5b043447be460c3cb7b90))
+
+
+
 ## [2.0.0](https://github.com/JPBBots/censorbot-components/compare/@jpbbots/censorbot-components@1.1.30...@jpbbots/censorbot-components@2.0.0) (2021-08-07)
 
 
