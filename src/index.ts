@@ -20,4 +20,6 @@ export * from '@/views/Option/Option'
 
 export * from '@/views/PremiumCard/PremiumCard'
 
+export * from '@/utils/PageWrapper/PageWrapper'
+
 export default CCProvider
