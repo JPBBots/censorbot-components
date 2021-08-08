@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2.2.0 (2021-08-08)
+
+
+### Features
+
+* **Header:** update header height ([427b8b1](https://github.com/JPBBots/censorbot-components/commit/427b8b1eff0c2850394e7ad53533b1ed071b1dc6))
+
+
+
 ### 2.1.6 (2021-08-08)
 
 
