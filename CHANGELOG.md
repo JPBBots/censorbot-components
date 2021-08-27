@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2.4.0 (2021-08-27)
+
+
+### Features
+
+* SelectMenu, InlineOptionGroup, Tag ([#31](https://github.com/JPBBots/censorbot-components/issues/31)) ([0025648](https://github.com/JPBBots/censorbot-components/commit/0025648824bbdbc7807a1d0dc805fc1b3e90d013))
+
+
+
 ### 2.3.1 (2021-08-08)
 
 **Note:** Version bump only for package @jpbbots/censorbot-components
