@@ -3,11 +3,13 @@ import { ChakraTheme, ThemeOverride } from '@chakra-ui/react'
 // These imports need to be local for theme type generation
 import { colors } from './colors'
 import { textStyles } from './textStyles'
+import { TagStyle as Tag } from './components/Tag.style'
 import { MenuStyle as Menu } from './components/Menu.style'
 import { InputStyle as Input } from './components/Input.style'
+import { SelectStyle as Select } from './components/Select.style'
 import { ButtonStyle as Button } from './components/Button.style'
 import { SwitchStyle as Switch } from './components/Switch.style'
-import { SelectStyle as Select } from './components/Select.style'
+import { PopoverStyle as Popover } from './components/Popover.style'
 import { TextareaStyle as Textarea } from './components/Textarea.style'
 import { NumberInputStyle as NumberInput } from './components/NumberInput.style'
 
@@ -106,11 +108,13 @@ const theme: ThemeOverride<ChakraTheme> = {
         borderColor: 'currentColor',
       },
     },
+    Tag,
     Menu,
     Input,
     Switch,
     Button,
     Select,
+    Popover,
     Textarea,
     NumberInput,
   },

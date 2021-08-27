@@ -42,6 +42,15 @@ export const ButtonStyle: ComponentStyleConfig = {
         boxShadow: 'anti-outline',
       },
     },
+    ghost: {
+      bg: 'transparent',
+      _hover: {
+        bg: 'lighter.5',
+      },
+      _active: {
+        bg: 'lighter.10',
+      },
+    },
   },
   sizes: {
     none: {

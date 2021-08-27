@@ -18,6 +18,10 @@ export * from '@/views/NavActions/NavActions'
 export * from '@/views/Section/Section'
 export * from '@/views/Option/Option'
 
+export * from '@/views/Tag/Tag'
+export * from '@/views/SelectMenu/SelectMenu'
+export * from '@/views/InlineOptionGroup/InlineOptionGroup'
+
 export * from '@/views/PremiumCard/PremiumCard'
 
 export * from '@/utils/PageWrapper/PageWrapper'
