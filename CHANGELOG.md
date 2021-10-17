@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2.5.0 (2021-10-17)
+
+
+### Features
+
+* **Header:** allow passing extra textProps for title ([3fefc28](https://github.com/JPBBots/censorbot-components/commit/3fefc28f30652f84bda3789782c0912402111617))
+
+
+
 ## 2.4.0 (2021-08-27)
 
 
