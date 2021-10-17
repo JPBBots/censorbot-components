@@ -1,5 +1,5 @@
 import type { PropsWithChildren } from 'react'
-import { Box, HStack, StackProps, Text } from '@chakra-ui/react'
+import { Box, HStack, StackProps, Text, TextProps } from '@chakra-ui/react'
 import { CensorBotIcon } from '@/views/Header/CensorBotIcon'
 
 const ICON_SIZE = '40px'
@@ -9,6 +9,7 @@ export interface HeaderProps extends PropsWithChildren<unknown> {
   title: string
   logoProps?: StackProps
   headerProps?: StackProps
+  textProps?: TextProps
 }
 
 export const Header = ({
@@ -16,6 +17,7 @@ export const Header = ({
   headerProps,
   logoProps,
   children,
+  textProps
 }: HeaderProps) => (
   <HStack
     px={8}
@@ -28,7 +30,7 @@ export const Header = ({
   >
     <HStack spacing={4} {...(logoProps || {})}>
       <CensorBotIcon boxSize={ICON_SIZE} />
-      <Text as="h1" color="lighter.100" textStyle="heading.xl">
+      <Text as="h1" color="lighter.100" textStyle="heading.xl" {...(textProps || {})}>
         {title}
       </Text>
     </HStack>
