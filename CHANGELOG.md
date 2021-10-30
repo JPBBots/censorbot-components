@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 2.5.1 (2021-10-30)
+
+
+### Bug Fixes
+
+* **footer:** remove Flex import ([52e1cf1](https://github.com/JPBBots/censorbot-components/commit/52e1cf10598a4ad21d7fc173d651e0e48323d2e2))
+
+
+
 ## 2.5.0 (2021-10-17)
 
 
