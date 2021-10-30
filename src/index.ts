@@ -8,6 +8,8 @@ export * from '@/theme'
 export * from '@/views/Category/Category'
 export * from '@/views/Category/Option/CategoryOption'
 
+export * from '@/views/Footer/Footer'
+
 export * from '@/views/GuildPreview/GuildPreview'
 
 export * from '@/views/Header/Header'
