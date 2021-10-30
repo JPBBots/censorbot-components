@@ -1,5 +1,5 @@
 import { CensorBotIcon } from '@/views/Header/CensorBotIcon'
-import { Flex, HStack, VStack, Text, Link } from '@chakra-ui/layout'
+import { HStack, VStack, Text, Link } from '@chakra-ui/layout'
 
 export interface FooterOptions {
   name: string
