@@ -17,7 +17,7 @@ export const Header = ({
   headerProps,
   logoProps,
   children,
-  textProps
+  textProps,
 }: HeaderProps) => (
   <HStack
     px={8}
@@ -30,7 +30,12 @@ export const Header = ({
   >
     <HStack spacing={4} {...(logoProps || {})}>
       <CensorBotIcon boxSize={ICON_SIZE} />
-      <Text as="h1" color="lighter.100" textStyle="heading.xl" {...(textProps || {})}>
+      <Text
+        as="h1"
+        color="lighter.100"
+        textStyle="heading.xl"
+        {...(textProps || {})}
+      >
         {title}
       </Text>
     </HStack>

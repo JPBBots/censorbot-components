@@ -53,7 +53,7 @@ export const NavActions = ({
             {...withLinkProps}
             textStyle="label.md"
             onClick={action.onClick || (() => {})}
-            color="lighter.40"
+            color="lighter.60"
           >
             {action.label}
           </Button>

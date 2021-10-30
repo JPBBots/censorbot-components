@@ -72,7 +72,7 @@ export const AvatarDropdownAction = ({
       className="hstack-avatar-insert"
       transition="background-color .12s ease"
     >
-      <Avatar boxSize={12} src={avatarUrl} bg="bg" />
+      <Avatar boxSize={12} src={avatarUrl} alt="menu dropdown" bg="bg" />
       <Center>
         <Icon boxSize={4} as={FaChevronDown} color="currentColor" />
       </Center>
