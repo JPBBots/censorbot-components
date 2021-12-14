@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 3.0.0 (2021-12-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* **PremiumCard:** remove premium feature enum
+
+### Code Refactoring
+
+* **PremiumCard:** remove premium feature enum ([ec60709](https://github.com/JPBBots/censorbot-components/commit/ec60709dc163b1589d98bf8e6b82977811426001))
+
+
+
 ### 2.5.2 (2021-10-30)
 
 **Note:** Version bump only for package @jpbbots/censorbot-components
