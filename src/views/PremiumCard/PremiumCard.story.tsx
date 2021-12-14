@@ -1,6 +1,6 @@
 import { Meta } from '@storybook/react'
 import { HStack } from '@chakra-ui/react'
-import { PremiumCard, PremiumPerk } from './PremiumCard'
+import { PremiumCard } from './PremiumCard'
 
 export default {
   title: 'Views/Premium Card',
@@ -9,27 +9,19 @@ export default {
 
 export const _PremiumCard = () => (
   <HStack spacing={4} justify="center" align="stretch">
-    <PremiumCard
-      title="Premium"
-      monthlyPrice={5}
-      perks={[PremiumPerk.PremiumServers_3, PremiumPerk.PremiumSupport]}
-    />
+    <PremiumCard title="Premium" monthlyPrice={5} perks={['a', 'b']} />
     <PremiumCard
       title="Super Premium"
       monthlyPrice={10}
-      perks={[
-        PremiumPerk.PremiumServers_6,
-        PremiumPerk.PremiumSupport,
-        PremiumPerk.BetaAccess,
-      ]}
+      perks={['a', 'b', 'c']}
     />
     <PremiumCard
       title="Own Instance"
       monthlyPrice={25}
       perks={[
-        PremiumPerk.IncludedHosting,
-        PremiumPerk.CustomAvatarUsername,
-        PremiumPerk.FeatureRequests,
+        'd',
+        'PremiumPerk.CustomAvatarUsername',
+        'PremiumPerk.FeatureRequests',
       ]}
     />
   </HStack>

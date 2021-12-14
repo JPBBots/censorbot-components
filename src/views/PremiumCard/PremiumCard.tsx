@@ -8,21 +8,11 @@ import {
 } from '@chakra-ui/react'
 import { FaCrown } from 'react-icons/fa'
 
-export enum PremiumPerk {
-  PremiumSupport = 'Premium Support',
-  PremiumServers_3 = '3 Premium Servers',
-  PremiumServers_6 = '6 Premium Servers',
-  BetaAccess = 'BetaAccess',
-  FeatureRequests = 'Extra feature requests allowed!',
-  CustomAvatarUsername = 'Custom avatar/username',
-  IncludedHosting = 'Hosting attached to any bot you own.',
-}
-
 const CARD_WIDTH = '240px'
 
 export interface PremiumCardProps extends StackProps {
   title: string
-  perks: PremiumPerk[]
+  perks: string[]
   monthlyPrice: number
   onBuy?(): void
 }
