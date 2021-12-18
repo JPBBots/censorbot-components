@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 3.1.2 (2021-12-18)
+
+
+### Bug Fixes
+
+* **Footer:** make footer look a bit more decent on mobile ([662d60f](https://github.com/JPBBots/censorbot-components/commit/662d60f6e0214267e4a54df33c4a045c7a3bf8f9))
+
+
+
 ### 3.1.1 (2021-12-18)
 
 
