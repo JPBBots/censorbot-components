@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 3.1.1 (2021-12-18)
+
+
+### Bug Fixes
+
+* **Footer:** new-lined heart ([af29769](https://github.com/JPBBots/censorbot-components/commit/af29769d0de42afd30c8791abadc5f1fcc0722f0))
+
+
+
 ## 3.1.0 (2021-12-18)
 
 
