@@ -1,6 +1,8 @@
 import { CensorBotIcon } from '@/views/Header/CensorBotIcon'
 import { HStack, VStack, Text, Link } from '@chakra-ui/layout'
 
+import { motion } from 'framer-motion'
+
 export interface FooterOptions {
   name: string
   copyrightYear: string
@@ -36,9 +38,29 @@ export const Footer = (props: FooterOptions) => {
         </Text>
         <Text color="lighter.60">
           Made with{' '}
-          <Text color="brand.100" display="contents">
-            ❤
-          </Text>{' '}
+          <motion.div
+            whileTap={{ cursor: 'grabbing' }}
+            style={{
+              cursor: 'grab',
+              userSelect: 'none',
+            }}
+            drag
+            dragTransition={{
+              bounceStiffness: 600,
+              bounceDamping: 20,
+            }}
+            dragElastic={0.5}
+            dragConstraints={{
+              top: 0,
+              right: 0,
+              bottom: 0,
+              left: 0,
+            }}
+          >
+            <Text color="brand.100" display="contents">
+              ❤
+            </Text>
+          </motion.div>
           by JPBBerry
         </Text>
       </VStack>
