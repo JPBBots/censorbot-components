@@ -17,7 +17,31 @@ export const _Footer = () => (
         children: [
           {
             label: 'Discord Server',
-            url: 'a',
+            url: '/support',
+          },
+          {
+            label: 'support@jpbbots.org',
+            url: 'mailto:support@jpbbots.org',
+          },
+        ],
+      },
+      {
+        label: 'Censor Bot',
+        children: [
+          {
+            label: 'Invite',
+            url: '/invite',
+          },
+          {
+            label: 'Vote',
+            url: '/vote',
+          },
+          {
+            label: 'Review',
+            url: '/review',
+          },
+          {
+            label: 'Credits',
           },
         ],
       },
@@ -26,32 +50,15 @@ export const _Footer = () => (
         children: [
           {
             label: 'Privacy Policy',
-            url: '',
+            url: '/privacy',
           },
           {
             label: 'Terms of Service',
-            url: '',
+            url: '/terms',
           },
           {
             label: 'Discord ToS',
-            url: '',
-          },
-        ],
-      },
-      {
-        label: 'Important Links',
-        children: [
-          {
-            label: 'Privacy Policy',
-            url: '',
-          },
-          {
-            label: 'Terms of Service',
-            url: '',
-          },
-          {
-            label: 'Discord ToS',
-            url: '',
+            url: 'https://discord.com/terms',
           },
         ],
       },

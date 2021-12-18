@@ -8,7 +8,11 @@ export interface FooterOptions {
 
   links: Array<{
     label: string
-    children: Array<{ label: string; url: string }>
+    children: Array<{
+      label: string
+      url?: string
+      onClick?: React.MouseEventHandler<HTMLAnchorElement>
+    }>
   }>
 }
 
@@ -49,8 +53,14 @@ export const Footer = (props: FooterOptions) => {
               <Link
                 target="_blank"
                 href={link.url}
+                onClick={link.onClick}
                 key={link.url}
                 color="lighter.40"
+                cursor="pointer"
+                _hover={{
+                  color: 'lighter.60',
+                  transition: '0.2s',
+                }}
               >
                 {link.label}
               </Link>
