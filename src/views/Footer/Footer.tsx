@@ -41,6 +41,7 @@ export const Footer = (props: FooterOptions) => {
           <motion.div
             whileTap={{ cursor: 'grabbing' }}
             style={{
+              display: 'inline-block',
               cursor: 'grab',
               userSelect: 'none',
             }}
@@ -60,7 +61,7 @@ export const Footer = (props: FooterOptions) => {
             <Text color="brand.100" display="contents">
               ❤
             </Text>
-          </motion.div>
+          </motion.div>{' '}
           by JPBBerry
         </Text>
       </VStack>
