@@ -1,5 +1,5 @@
 import { CensorBotIcon } from '@/views/Header/CensorBotIcon'
-import { HStack, VStack, Text, Link } from '@chakra-ui/layout'
+import { HStack, VStack, Text, Link, Flex } from '@chakra-ui/layout'
 
 import { motion } from 'framer-motion'
 
@@ -20,7 +20,7 @@ export interface FooterOptions {
 
 export const Footer = (props: FooterOptions) => {
   return (
-    <HStack
+    <Flex
       w="full"
       align="center"
       justify="space-around"
@@ -66,7 +66,13 @@ export const Footer = (props: FooterOptions) => {
         </Text>
       </VStack>
 
-      <HStack w="half" align="flex-start" spacing="auto" wrap="wrap">
+      <Flex
+        w="half"
+        align="flex-start"
+        justify="space-between"
+        gridGap="10px"
+        wrap="wrap"
+      >
         {props.links.map((cat) => (
           <VStack align="flex-start" key={cat.label}>
             <Text color="lighter.60" textStyle="label.sm">
@@ -90,7 +96,7 @@ export const Footer = (props: FooterOptions) => {
             ))}
           </VStack>
         ))}
-      </HStack>
-    </HStack>
+      </Flex>
+    </Flex>
   )
 }
