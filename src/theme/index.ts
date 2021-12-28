@@ -12,6 +12,7 @@ import { SwitchStyle as Switch } from './components/Switch.style'
 import { PopoverStyle as Popover } from './components/Popover.style'
 import { TextareaStyle as Textarea } from './components/Textarea.style'
 import { NumberInputStyle as NumberInput } from './components/NumberInput.style'
+import { SliderStyle as Slider } from './components/Slider.style'
 
 export const DEFAULT_COLOR_MODE = 'dark'
 
@@ -117,6 +118,7 @@ const theme: ThemeOverride<ChakraTheme> = {
     Popover,
     Textarea,
     NumberInput,
+    Slider,
   },
 }
 

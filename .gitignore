@@ -2,6 +2,7 @@
 # Custom stuff #
 lib/
 .vsc/
+.vscode/
 .idea/
 storybook-static/
 
