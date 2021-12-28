@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 3.2.0 (2021-12-28)
+
+
+### Features
+
+* **inputs:** add sm size for Select & NumberInput ([5848bda](https://github.com/JPBBots/censorbot-components/commit/5848bda63d9de69de70c2eb1134e407900101482))
+
+
+
 ### 3.1.3 (2021-12-28)
 
 **Note:** Version bump only for package @jpbbots/censorbot-components
