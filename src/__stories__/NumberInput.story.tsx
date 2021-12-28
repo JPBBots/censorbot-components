@@ -13,11 +13,21 @@ export default {
 } as Meta
 
 export const _NumberInput = () => (
-  <NumberInput defaultValue={15} step={5} min={5} max={125}>
-    <NumberInputField />
-    <NumberInputStepper>
-      <NumberIncrementStepper />
-      <NumberDecrementStepper />
-    </NumberInputStepper>
-  </NumberInput>
+  <>
+    <NumberInput defaultValue={15} step={5} min={5} max={125}>
+      <NumberInputField />
+      <NumberInputStepper>
+        <NumberIncrementStepper />
+        <NumberDecrementStepper />
+      </NumberInputStepper>
+    </NumberInput>
+
+    <NumberInput size="sm" defaultValue={15} step={5} min={5} max={125}>
+      <NumberInputField />
+      <NumberInputStepper>
+        <NumberIncrementStepper />
+        <NumberDecrementStepper />
+      </NumberInputStepper>
+    </NumberInput>
+  </>
 )

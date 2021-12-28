@@ -73,6 +73,25 @@ export const NumberInputStyle: ComponentStyleConfig = {
         rounded: 'md',
       },
     },
+    sm: {
+      field: {
+        textStyle: 'default',
+        p: 2,
+        rounded: 'md',
+      },
+      stepper: {
+        p: '5px',
+        fontSize: '10px',
+        _first: {
+          pb: 1,
+          roundedTop: '4px',
+        },
+        _last: {
+          pt: 1,
+          roundedBottom: '4px',
+        },
+      },
+    },
   },
   defaultProps: {
     size: 'md',

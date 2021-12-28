@@ -38,6 +38,17 @@ export const SelectStyle: ComponentStyleConfig = {
         fontSize: 28,
       },
     },
+    sm: {
+      field: {
+        textStyle: 'default',
+        p: 2,
+        rounded: 'md',
+      },
+      icon: {
+        p: 2,
+        fontSize: 20,
+      },
+    },
   },
   variants: {
     default: {
