@@ -13,6 +13,7 @@ import { PopoverStyle as Popover } from './components/Popover.style'
 import { TextareaStyle as Textarea } from './components/Textarea.style'
 import { NumberInputStyle as NumberInput } from './components/NumberInput.style'
 import { SliderStyle as Slider } from './components/Slider.style'
+import { AlertStyle as Alert } from './components/Alert.style'
 
 export const DEFAULT_COLOR_MODE = 'dark'
 
@@ -119,6 +120,7 @@ const theme: ThemeOverride<ChakraTheme> = {
     Textarea,
     NumberInput,
     Slider,
+    Alert,
   },
 }
 
