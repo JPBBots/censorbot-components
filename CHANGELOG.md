@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 3.3.0 (2021-12-29)
+
+
+### Features
+
+* **components:** add Alert component ([f79564c](https://github.com/JPBBots/censorbot-components/commit/f79564c7f29415221dcd5614c7e3da88d04a27a5))
+
+
+
 ## 3.2.0 (2021-12-28)
 
 
