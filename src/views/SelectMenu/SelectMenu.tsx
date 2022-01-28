@@ -11,7 +11,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react'
 import type { ReactNode } from 'react'
-import type { UseDisclosureReturn } from '@chakra-ui/hooks/dist/types/use-disclosure'
+import type { UseDisclosureReturn } from '@chakra-ui/hooks'
 
 export interface SelectMenuOption {
   name?: string
